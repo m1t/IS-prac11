@@ -12,6 +12,9 @@
 
 @property (strong, nonatomic) UILabel *myLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *image;
+@property (strong, nonatomic) IBOutlet UILabel *coloredLabel;
+
+- (IBAction)switchChanged:(UISwitch *)sender;
 
 @end
 
@@ -24,7 +27,9 @@
 
     _myLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 400, 200, 40)];
     _myLabel.text = @"iOSアプリ開発コース";
+    _myLabel.textAlignment = NSTextAlignmentCenter;
     _myLabel.textColor = [UIColor blueColor];
+    _myLabel.backgroundColor = [UIColor yellowColor];
     
     [self.view addSubview:_myLabel];
 }
@@ -41,6 +46,26 @@
     } else {
         [self.view addSubview:_myLabel];
     }
-}
 
+    if (_coloredLabel.textColor == [UIColor blackColor]) {
+        _coloredLabel.textColor = [UIColor whiteColor];
+    } else if(_coloredLabel.textColor == [UIColor whiteColor]) {
+        _coloredLabel.textColor = [UIColor blueColor];
+    } else if(_coloredLabel.textColor == [UIColor blueColor]) {
+        _coloredLabel.textColor = [UIColor redColor];
+    } else if(_coloredLabel.textColor == [UIColor redColor]) {
+        _coloredLabel.textColor = [UIColor magentaColor];
+    } else if(_coloredLabel.textColor == [UIColor magentaColor]) {
+        _coloredLabel.textColor = [UIColor greenColor];
+    } else if(_coloredLabel.textColor == [UIColor greenColor]) {
+        _coloredLabel.textColor = [UIColor cyanColor];
+    } else if(_coloredLabel.textColor == [UIColor cyanColor]) {
+        _coloredLabel.textColor = [UIColor yellowColor];
+    } else {
+        _coloredLabel.textColor = [UIColor blackColor];
+    }
+}
+- (IBAction)switchChanged:(UISwitch *)sender {
+    _image.hidden = ! (sender.on);
+}
        @end

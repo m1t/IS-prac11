@@ -50,7 +50,11 @@
                                             <constraint firstAttribute="width" constant="114" id="v5j-6h-2wd"/>
                                         </constraints>
                                     </slider>
-                                    <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sn8-ph-LlI"/>
+                                    <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sn8-ph-LlI">
+                                        <connections>
+                                            <action selector="switchChanged:" destination="2" eventType="valueChanged" id="o9w-Ju-XGG"/>
+                                        </connections>
+                                    </switch>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="nrH-oG-UBg"/>
                                     <progressView opaque="NO" contentMode="scaleToFill" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bVf-4c-tqr">
                                         <constraints>
@@ -96,6 +100,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="coloredLabel" destination="QZE-Oq-tYd" id="BPK-O4-glO"/>
                         <outlet property="image" destination="29h-rg-Cpt" id="Pky-fs-UOC"/>
                     </connections>
                 </viewController>
@@ -114,6 +119,8 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
                 <relationship kind="action" name="button:"/>
+                <relationship kind="action" name="switchChanged:" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="coloredLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="image" candidateClass="UIImageView"/>
             </relationships>
         </class>
