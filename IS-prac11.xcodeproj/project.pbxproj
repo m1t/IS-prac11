@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83321878188133B2000A3B94 /* pic1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 83321875188133B2000A3B94 /* pic1.jpeg */; };
+		83321879188133B2000A3B94 /* pic2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 83321876188133B2000A3B94 /* pic2.jpeg */; };
+		8332187A188133B2000A3B94 /* pic3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 83321877188133B2000A3B94 /* pic3.jpeg */; };
 		83B071DD18811BC400AF66F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B071DC18811BC400AF66F9 /* UIKit.framework */; };
 		83B071DF18811BC400AF66F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B071DE18811BC400AF66F9 /* Foundation.framework */; };
 		83B071E118811BC400AF66F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B071E018811BC400AF66F9 /* CoreGraphics.framework */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		83321875188133B2000A3B94 /* pic1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic1.jpeg; sourceTree = "<group>"; };
+		83321876188133B2000A3B94 /* pic2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic2.jpeg; sourceTree = "<group>"; };
+		83321877188133B2000A3B94 /* pic3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic3.jpeg; sourceTree = "<group>"; };
 		83B071D918811BC400AF66F9 /* IS-prac11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IS-prac11.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B071DC18811BC400AF66F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		83B071DE18811BC400AF66F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -84,6 +90,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8332187B188133CD000A3B94 /* pic */ = {
+			isa = PBXGroup;
+			children = (
+				83321875188133B2000A3B94 /* pic1.jpeg */,
+				83321876188133B2000A3B94 /* pic2.jpeg */,
+				83321877188133B2000A3B94 /* pic3.jpeg */,
+			);
+			name = pic;
+			sourceTree = "<group>";
+		};
 		83B071D018811BC300AF66F9 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +133,7 @@
 		83B071E218811BC400AF66F9 /* IS-prac11 */ = {
 			isa = PBXGroup;
 			children = (
+				8332187B188133CD000A3B94 /* pic */,
 				83B071EB18811BC400AF66F9 /* AppDelegate.h */,
 				83B071EC18811BC400AF66F9 /* AppDelegate.m */,
 				83B071F418811BC400AF66F9 /* MainStoryboard.storyboard */,
@@ -236,6 +253,9 @@
 				83B071F118811BC400AF66F9 /* Default@2x.png in Resources */,
 				83B071F318811BC400AF66F9 /* Default-568h@2x.png in Resources */,
 				83B071F618811BC400AF66F9 /* MainStoryboard.storyboard in Resources */,
+				83321878188133B2000A3B94 /* pic1.jpeg in Resources */,
+				83321879188133B2000A3B94 /* pic2.jpeg in Resources */,
+				8332187A188133B2000A3B94 /* pic3.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +473,7 @@
 				83B0721318811BC400AF66F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83B0721418811BC400AF66F9 /* Build configuration list for PBXNativeTarget "IS-prac11Tests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +482,7 @@
 				83B0721618811BC400AF66F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

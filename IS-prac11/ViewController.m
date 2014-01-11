@@ -10,6 +10,9 @@
 
 @interface ViewController ()
 
+@property (strong, nonatomic) UILabel *myLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *image;
+
 @end
 
 @implementation ViewController
@@ -18,6 +21,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+    _myLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 400, 200, 40)];
+    _myLabel.text = @"iOSアプリ開発コース";
+    _myLabel.textColor = [UIColor blueColor];
+    
+    [self.view addSubview:_myLabel];
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +35,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-@end
+- (IBAction)button:(id)sender {
+    if ([_myLabel isDescendantOfView:self.view]) {
+        [_myLabel removeFromSuperview];
+    } else {
+        [self.view addSubview:_myLabel];
+    }
+}
+
+       @end
